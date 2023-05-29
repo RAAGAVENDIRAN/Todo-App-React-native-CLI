@@ -30,9 +30,17 @@ class Trash extends Component {
   }
 
   componentDidUpdate(prevprops, prevState) {
+    console.log('here 1');
+
     if (prevState.trashTodo !== this.props.trashTodo) {
+      console.log(this.props.trashTodo);
+      let tempTrash = [];
+      Object.keys(this.props.trashTodo).filter(key => {
+        tempTrash.push(this.props.trashTodo[key.toString()]);
+      });
       this.setState({
         trashTodo: this.props.trashTodo,
+        searchTodoArr: tempTrash,
       });
     }
   }
