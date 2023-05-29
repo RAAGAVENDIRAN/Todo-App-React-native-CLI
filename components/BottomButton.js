@@ -17,8 +17,11 @@ function BottomButton({navigated}) {
 const styles = StyleSheet.create({
   floatingText: {
     fontWeight: 'bold',
-    fontSize: 60,
+    fontSize: 50,
+
+    height: 70,
     color: 'black',
+    fontFamily: 'Poppins-Bold',
   },
   touchableOpacity: {
     backgroundColor: '#B0DAFF',
@@ -28,7 +31,7 @@ const styles = StyleSheet.create({
     right: 30,
     bottom: 30,
     borderRadius: 35,
-    justifyContent: 'center',
+    // justifyContent: 'center',
     alignItems: 'center',
   },
 });

@@ -39,7 +39,7 @@ function Iconic({
         style={[styles.text, {height: height}]}
         placeholder={placeholder}
         value={value}
-        placeholderTextColor="black"
+        placeholderTextColor="grey"
         onChangeText={onChangeText}
         secureTextEntry={secureTextEntry}
         importantForAutofill="no"
