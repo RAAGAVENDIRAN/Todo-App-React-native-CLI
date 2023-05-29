@@ -15,6 +15,13 @@ A todo list allows you to prioritize the tasks that are more important. This mea
 ![IMG_20230529_122301 (1)](https://github.com/RAAGAVENDIRAN/Todo-App-React-native-CLI/assets/81763768/5e7d3073-34d3-4179-a043-8cbc3d08fd78)
 ![IMG_20230529_122237 (1)](https://github.com/RAAGAVENDIRAN/Todo-App-React-native-CLI/assets/81763768/1d9e3b62-973a-4f34-8e36-7ecb8b9918e2)
 
+# Video
+
+https://github.com/RAAGAVENDIRAN/Todo-App-React-native-CLI/assets/81763768/59437b1c-8578-4cad-8482-64c0e7641034
+
+
+
+
 
 
 
