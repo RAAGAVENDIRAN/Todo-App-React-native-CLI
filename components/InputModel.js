@@ -31,8 +31,9 @@ export default function InputModel({navigation, route}) {
   const dispatch = useDispatch();
 
   //Selectors
-  const completedTodo = useSelector(state => state.todo.completedTodo);
-  const pendingTodo = useSelector(state => state.todo.pendingTodo);
+  // const completedTodo = useSelector(state => state.todo.completedTodo);
+  // const pendingTodo = useSelector(state => state.todo.pendingTodo);
+  const {completedTodo, pendingTodo} = useSelector(state => state.todo);
   const user = useSelector(state => state.user.currentUser);
 
   //datas
@@ -60,10 +61,6 @@ export default function InputModel({navigation, route}) {
 
   //handlers
   useEffect(() => {
-    calendarDate();
-  }, [markDate]);
-
-  const calendarDate = () => {
     [...completedTodoArr, ...pendingTodoArr].map(item => {
       if (item.completed == true) {
         markDate[new Date(item.date).toISOString().slice(0, 10)] = {
@@ -79,7 +76,10 @@ export default function InputModel({navigation, route}) {
         };
       }
     });
-  };
+    setMarkDate({...markDate});
+  }, []);
+
+  const calendarDate = () => {};
 
   const onChange = (event, selectedDate) => {
     const currentDate = selectedDate || date;
